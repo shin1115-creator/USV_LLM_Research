@@ -1,0 +1,36 @@
+
+{
+  "scenario_id": "crossing_001",
+  "encounter_type": "横切り",
+  "ship_type": "動力船",
+  "visibility": "互いに視認可能",
+
+  "navigation": {
+    "relative_distance_nm": 1.6,
+    "relative_bearing_deg": 45,
+    "bearing_rate_deg_min": 0.1,
+    "tcpa_sec": 360,
+    "dcpa_nm": 0.08
+  },
+
+  "routes": {
+    "A": {
+      "description": "他船の船尾側を通過する",
+      "min_clearance_m": 830
+    },
+    "B": {
+      "description": "他船の船首側を横切る",
+      "min_clearance_m": 280
+    }
+  },
+
+  "correct_route": "A",
+
+  "reference_reasons": [
+    "他船との接近に注意が必要である",
+    "ルートAは他船の船尾側を通過する",
+    "ルートAの最小離隔距離は830mである",
+    "ルートBの最小離隔距離は280mである",
+    "ルートAの方が大きな離隔距離を確保できる"
+  ]
+}
